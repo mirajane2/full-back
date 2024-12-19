@@ -1,0 +1,19 @@
+<div class="form-container">
+    <h2>Modifier un Pirate</h2>
+    <form (ngSubmit)="onSubmit()">
+        <label for="name">Name :</label>
+        <input type="text" id="name" [(ngModel)]="pirate.name" name="name" value="texte" required>
+
+        <label for="description">Description :</label>
+        <input type="text" id="description" [(ngModel)]="pirate.description" name="description" required>
+
+        <label for="img">ImageUrl</label>
+        <input type="text" id="img" [(ngModel)]="pirate.img" name="img" required>
+
+        <label for="prime">Prime :</label>
+        <input type="text" id="prime" [(ngModel)]="pirate.prime" name="prime" required>
+      
+        <button type="submit">Mettre a jour</button>
+
+    </form>
+</div>

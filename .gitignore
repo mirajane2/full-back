@@ -1,0 +1,18 @@
+# Ignorer les fichiers spécifiques à Symfony (backend)
+backend/var/
+backend/vendor/
+backend/.env
+backend/.env.*
+
+# Ignorer les fichiers spécifiques à Angular (frontend)
+frontend/node_modules/
+frontend/dist/
+frontend/src/environments/environment*.ts
+
+# Général
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+*.tmp

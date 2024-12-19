@@ -1,0 +1,8 @@
+<h1>Liste des Equipages</h1>
+<div class="list" *ngFor="let equipage of equipages">
+    <span>{{ equipage.name | uppercase }}</span>
+    <button (click)="detailEquipage(equipage.id)">View</button>
+    <button (click)="DeleteEquipage(equipage.id)">Delete</button>
+</div>
+<button (click)="newEquipage()">Create</button>
+       

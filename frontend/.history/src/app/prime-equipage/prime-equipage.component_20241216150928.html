@@ -1,0 +1,19 @@
+<div class="pirate-poster">
+    <h1> Pirates</h1>
+    <div class="Poster" *ngFor="let pirate of pirates">
+        <div class="poster-header">
+            <h2>Wanted</h2>           
+        </div>
+        <img src="{{ pirate.img }}" alt="{{ pirate.name }}" class="poster-image">
+        <div class="poster-detail">
+            <p class="description"> {{ pirate.description }}</p>
+            <h3> {{ pirate.name }}</h3>
+            <p class="bounty"> {{ pirate.prime | currency: 'USD':'symbol' }}</p>
+            <button (click)="DeletePirate(pirate.id)">Delete</button>
+            <button (click)="UpdatePirate(crewId, pirate.id)">Update</button>
+        </div>
+    </div>
+</div>
+<div>
+    <button (click)="newPirate()">Create</button>
+</div>

@@ -1,0 +1,9 @@
+<div class="form-container">
+    <h2>Creer un Equipage</h2>
+    <form (ngSubmit)="onSubmit()">
+        <label for="name">Name</label>
+        <input type="text" id="name" [(ngModel)]="equipage.name" name="name" required>
+    
+        <button type="submit">Créer</button>
+    </form>
+</div>

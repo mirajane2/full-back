@@ -1,0 +1,27 @@
+.list{
+    box-sizing: border-box;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px 30px;
+    width: 35%;
+    box-shadow: lightgray 4px 4px 20px;
+    h1 {
+        margin-bottom: 0;
+    }
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 5px 15px;
+    margin-top: 20px;
+}
+
+span{
+    font-weight: bold;
+}
